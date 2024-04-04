@@ -11,6 +11,14 @@ public class UserController {
         model.addAttribute("title", "Hola mundo!");
         model.addAttribute("name", "Leo");
         model.addAttribute("lastname", "Estrada");
+        // model.addAttribute("email", "leoies1607@gmail.com");
+
+
+        return "details";
+    }
+    @GetMapping("/details")
+    public String details(Model model) {
+       
 
 
         return "details";
